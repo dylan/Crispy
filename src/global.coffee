@@ -45,9 +45,12 @@ handleMessage = (event)->
         when 'on'
           turnOffButton(button)
     else if event.name is "crispy-load"
-      if event.message is "bookmarks:" or event.message is "topsites:"
+      if event.message.protocol is "bookmarks:" or event.message.protocol is "topsites:"
         button.disabled = true
         turnOnButton(button)
+      else if event.message.host.indexOf("pixeljoint") > -1
+        turnOffButton(button)
+        tab.page.dispatchMessage("crispy-toggle",'');
       else
         turnOnButton(button)
     else if event.name is "crispy-state"

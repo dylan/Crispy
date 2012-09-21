@@ -70,9 +70,12 @@
             return turnOffButton(button);
         }
       } else if (event.name === "crispy-load") {
-        if (event.message === "bookmarks:" || event.message === "topsites:") {
+        if (event.message.protocol === "bookmarks:" || event.message.protocol === "topsites:") {
           button.disabled = true;
           return turnOnButton(button);
+        } else if (event.message.host.indexOf("pixeljoint") > -1) {
+          turnOffButton(button);
+          return tab.page.dispatchMessage("crispy-toggle", '');
         } else {
           return turnOnButton(button);
         }

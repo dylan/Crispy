@@ -21,7 +21,7 @@
       }
     };
     handleLoadEvent = function() {
-      return safari.self.tab.dispatchMessage("crispy-load", location.protocol);
+      return safari.self.tab.dispatchMessage("crispy-load", location);
     };
     handleFocus = function() {
       return safari.self.tab.dispatchMessage("crispy-state", pageState);

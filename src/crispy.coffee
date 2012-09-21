@@ -17,7 +17,7 @@ if window is window.top
         pageState = false
 
   handleLoadEvent = ()->
-    safari.self.tab.dispatchMessage("crispy-load", location.protocol)
+    safari.self.tab.dispatchMessage("crispy-load", location)
   
   handleFocus = ()->
     safari.self.tab.dispatchMessage("crispy-state", pageState)
