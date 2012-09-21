@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -28,7 +28,7 @@
 				<key>Identifier</key>
 				<string>crispyButton</string>
 				<key>Image</key>
-				<string>icon.png</string>
+				<string>icon-blurry.png</string>
 				<key>Label</key>
 				<string>Off</string>
 				<key>Palette Label</key>
@@ -66,6 +66,8 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://github.com/dylan/Crispy/blob/master/Crispy.safariextz</string>
 	<key>Website</key>
 	<string>http://dyli.sh</string>
 </dict>
