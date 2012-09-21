@@ -1,0 +1,3 @@
+body.bvr-crispy-ext * {
+  image-rendering: -webkit-optimize-contrast;
+}
