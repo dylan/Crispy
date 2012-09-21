@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Author</key>
+	<string>Dylan Wreggelsworth</string>
 	<key>Builder Version</key>
 	<string>8536.26.14</string>
 	<key>CFBundleDisplayName</key>
@@ -50,6 +52,8 @@
 			<string>crispy.css</string>
 		</array>
 	</dict>
+	<key>Description</key>
+	<string>Makes pixels crispy. Meant to be used on pixel art...</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -62,5 +66,7 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Website</key>
+	<string>http://dyli.sh</string>
 </dict>
 </plist>
