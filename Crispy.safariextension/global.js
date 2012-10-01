@@ -21,12 +21,12 @@
 
   turnOnButton = function(button) {
     button.image = "" + extension.baseURI + "icon-blurry.png";
-    return button.label = button.toolTip = 'Off';
+    button.label = button.toolTip = 'Off';
   };
 
   turnOffButton = function(button) {
     button.image = "" + extension.baseURI + "icon.png";
-    return button.label = button.toolTip = 'On';
+    button.label = button.toolTip = 'On';
   };
 
   handleCommand = function(event) {
@@ -38,7 +38,7 @@
       tab.page.dispatchMessage("crispy-toggle", '');
     } else {
       turnOffButton(button);
-      return tab.page.dispatchMessage("crispy-toggle", '');
+      tab.page.dispatchMessage("crispy-toggle", '');
     }
   };
 

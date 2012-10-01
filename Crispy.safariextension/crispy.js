@@ -21,10 +21,10 @@
       }
     };
     handleLoadEvent = function() {
-      return safari.self.tab.dispatchMessage("crispy-load", location);
+      safari.self.tab.dispatchMessage("crispy-load", location);
     };
     handleFocus = function() {
-      return safari.self.tab.dispatchMessage("crispy-state", pageState);
+      safari.self.tab.dispatchMessage("crispy-state", pageState);
     };
     window.addEventListener("pageshow", handleLoadEvent, true);
     window.addEventListener("focus", handleFocus, false);

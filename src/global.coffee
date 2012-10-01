@@ -8,10 +8,12 @@ toolbarButton = (window)->
 turnOnButton = (button)->
   button.image = "#{extension.baseURI}icon-blurry.png"
   button.label = button.toolTip = 'Off'
+  return
 
 turnOffButton = (button)->
   button.image = "#{extension.baseURI}icon.png"
   button.label = button.toolTip = 'On'
+  return
 
 handleCommand = (event)->
   button = event.target
@@ -23,6 +25,7 @@ handleCommand = (event)->
   else
     turnOffButton(button)
     tab.page.dispatchMessage("crispy-toggle",'');
+    return
 
 handleValidate = (event)->
   button = event.target
